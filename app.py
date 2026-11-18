@@ -1,4 +1,4 @@
-        churned = int((filtered["Churn"] == 1).sum())
+churned = int((filtered["Churn"] == 1).sum())
         x,y,z = st.columns(3)
         x.metric("Filtered customers", f"{total:,}")
         y.metric("Churned", f"{churned:,}")
